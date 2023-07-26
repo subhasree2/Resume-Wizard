@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <Navbar />
-      <div className="container min-h-max m-10 p-3">
+      <div className="mainpage min-h-max m-10 p-3">
         <Title />
         <div className="main flex">
           <Sidebar />
