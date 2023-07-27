@@ -17,10 +17,10 @@ const store = configureStore({
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex flex-col">
       <Provider store={store}>
         <Navbar />
-        <div className="mainpage min-h-max m-10 p-3">
+        <div className="mainpage m-10 p-3 w-[90%] ml-auto mr-auto">
           <Title />
           <div className="main flex">
             <Sidebar />

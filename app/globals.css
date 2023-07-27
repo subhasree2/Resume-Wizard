@@ -44,7 +44,7 @@ h2 {
 
 hr {
   border : 2px solid black;
-  width: 350px;
+  width: 200px;
 }
 
 h3 {
@@ -53,5 +53,9 @@ h3 {
 }
 
 .contenthr {
-  width: 800px;
+  width: 200px;
+}
+
+.Buttons .Savebtn {
+  margin-right: 10px;
 }

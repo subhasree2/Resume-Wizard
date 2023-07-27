@@ -1,4 +1,4 @@
-import { updateEducation } from '../../store/Education';
+import { updateEducation,deleteEducation } from '../../store/Education';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 
@@ -18,6 +18,10 @@ const UpdateEducationModal = ({ element, onClose, isVisible }) => {
             Duration : Duration
         }
         dispatch(updateEducation(updateEdu));
+    }
+
+    const deleteDetails = () => {
+      dispatch(deleteEducation({id : element.id}));
     }
 
     if (!isVisible) return null;
@@ -46,7 +50,10 @@ const UpdateEducationModal = ({ element, onClose, isVisible }) => {
                 <input className="p-1 m-2" name="duration" value={Duration} onChange={(e) => setDuration(e.target.value)}/>
               </div>
     
-              <button className="rounded-md mt-2 p-2 pl-4 pr-4 bg-green-700 text-white" onClick={(e) => {updateDetails();onClose(e);e.stopPropagation();}}>Save & Close</button>
+              <div className='flex justify-between align-middle items-center ml-auto mr-auto'>
+                <button className="rounded-md mt-2 p-2 pl-4 pr-4 bg-green-700 text-white mr-10" onClick={(e) => {updateDetails();onClose(e);e.stopPropagation();}}>Save & Close</button>
+                <button className="ml-10 rounded-md mt-2 p-2 pl-4 pr-4 bg-red-700 text-white" onClick={(e) => {deleteDetails();onClose(e);e.stopPropagation();}}>Delete</button>
+              </div>
             </div>
           </div>
         </div>

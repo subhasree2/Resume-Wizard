@@ -1,4 +1,4 @@
-import { updateProject } from '../../store/Project';
+import { updateProject,deleteProject } from '../../store/Project';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 
@@ -18,6 +18,10 @@ const UpdateProjectModal = ({ element, onClose, isVisible }) => {
             link : link
         }
         dispatch(updateProject(updateproj));
+    }
+
+    const deleteDetails = () => {
+      dispatch(deleteProject({id : element.id}));
     }
 
     if (!isVisible) return null;
@@ -46,7 +50,10 @@ const UpdateProjectModal = ({ element, onClose, isVisible }) => {
                 <input className="p-1 m-2" name="duration" value={link} onChange={(e) => setlink(e.target.value)}/>
               </div>
     
-              <button className="rounded-md mt-2 p-2 pl-4 pr-4 bg-green-700 text-white" onClick={(e) => {updateDetails();onClose(e);e.stopPropagation();}}>Save & Close</button>
+              <div className='ml-auto mr-auto mt-2 Buttons'>
+                <button className="Savebtn rounded-md mr-10 p-2 pl-4 pr-4 bg-green-700 text-white" onClick={(e) => {updateDetails();onClose(e);e.stopPropagation();}}>Save</button>
+                <button className="rounded-md p-2 pl-4 pr-4 bg-red-700 text-white" onClick={(e) => {deleteDetails();onClose(e);e.stopPropagation();}}>Delete</button>
+              </div>
             </div>
           </div>
         </div>
