@@ -6,10 +6,12 @@ import Title from "./components/Title";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import EducationReducer from './store/Education';
+import ProjectReducer from './store/Project';
 
 const store = configureStore({
   reducer : {
-    education : EducationReducer
+    education : EducationReducer,
+    project : ProjectReducer
   }
 });
 
