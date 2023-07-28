@@ -15,7 +15,7 @@ const Skill = () => {
     };
 
     return (
-      <div className="skills flex p-4 flex-col">
+      <div className="skills flex pl-4 pr-4 pt-2 flex-col">
         <div className="flex">
           <AddSkillModal onClose={() => showaddmodal(false)} isVisible={addmodal} />
           {updatemodal && temp && (

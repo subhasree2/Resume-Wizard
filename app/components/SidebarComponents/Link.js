@@ -15,7 +15,7 @@ const Link = () => {
     };
 
     return (
-        <div className="links flex p-4 flex-col">
+        <div className="links flex pl-4 pr-4 pt-2 flex-col">
             <div className="flex">
                 <AddLinkModal onClose={() => showaddmodal(false)} isVisible={addmodal} />
                 {updatemodal && temp && (

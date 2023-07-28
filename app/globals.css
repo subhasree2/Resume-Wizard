@@ -40,6 +40,7 @@ input,textarea {
 h2 {
   font-size: 20px;
   text-transform: uppercase;
+  color : #18374e;
 }
 
 hr {
@@ -53,4 +54,44 @@ h3 {
 
 .Buttons .Savebtn {
   margin-right: 10px;
+}
+
+.SummaryContent:focus {
+  border-color: #234E70;
+}
+
+.linkelement,.Info,.skillelement{
+    background-color: #FCD34D; /* A shade of yellow */
+    color: #333; /* Darker text color for better visibility */
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s, font-size 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light box-shadow initially */
+}
+
+.Eduelement,.projelement {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s, font-size 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.Eduelement:hover,.projelement:hover {
+  background-color: #234E70;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar button {
+  border : 1px solid white;
+}
+
+@media print {
+  @page {
+    size: 297mm 400mm;
+  }
 }

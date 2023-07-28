@@ -17,7 +17,7 @@ const Education = () => {
     return (
         <div className="Education pl-4">
             <div className="pl-2">
-                <h2 className="font-bold flex flex-row justify-between">Education<button className="bg-blue-500 text-white font-normal p-2 pr-6 pl-6 rounded-md text-[10px] mb-1" onClick={() => showAddModal(true)}>Add Education</button></h2>
+                <h2 className="font-bold flex flex-row justify-between text-center cursor-pointer" onClick={() => showAddModal(true)}>Education</h2>
                 <AddEducationModal onClose={() => showAddModal(false)} isVisible={Addmodal} />
                 {updatemodal && temp && (
                     <UpdateEducationModal element={temp} onClose={() => showUpdateModal(false)} isVisible={updatemodal} />

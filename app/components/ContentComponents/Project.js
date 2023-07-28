@@ -17,7 +17,7 @@ const Project = () => {
     return (
         <div className="Project pl-4 mt-3">
             <div className="pl-2">
-                <h2 className="font-bold flex flex-row justify-between">Projects<button className="bg-blue-500 text-white font-normal p-2 pr-8 pl-8 rounded-md text-[10px] mb-1" onClick={() => showAddModal(true)}>Add Project</button></h2>
+                <h2 className="font-bold flex flex-row justify-between cursor-pointer" onClick={() => showAddModal(true)}>Projects</h2>
                 <AddProjectModal onClose={() => showAddModal(false)} isVisible={Addmodal} />
                 {updatemodal && temp && (
                     <UpdateProjectModal element={temp} onClose={() => showUpdateModal(false)} isVisible={updatemodal} />

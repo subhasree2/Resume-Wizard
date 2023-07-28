@@ -12,12 +12,12 @@ function Sidebar() {
   const [modal, showModal] = useState(false);
 
   return (
-    <div className="w-[30%] Sidebar flex flex-col">
-      <div className="info flex p-4">
+    <div className="w-[40%] Sidebar flex flex-col ml-0">
+      <div className="info flex flex-col pt-4 pl-4 pr-4">
         <InfoModal Addr={Addr} setAddr={setAddr} Email={Email} setEmail={setEmail} phNo={phNo} setphNo={setphNo} onClose={() => showModal(false)} isVisible={modal} />
-        <div className="cursor-pointer" onClick={() => showModal(true)}>
-          <h2 className="font-bold">INFO</h2>
-          <h3 className="mt-3 font-semibold">Address</h3> <p className="">{Addr}</p>
+        <h2 className="font-bold">INFO</h2>
+        <div className="cursor-pointer Info" onClick={() => showModal(true)}>
+          <h3 className="font-semibold">Address</h3> <p className="">{Addr}</p>
           <h3 className="mt-3 font-semibold">Email</h3> <p>{Email}</p>
           <h3 className="mt-3 font-semibold">Phone number</h3> <p>{phNo}</p>
         </div>
