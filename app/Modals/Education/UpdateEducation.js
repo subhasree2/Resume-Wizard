@@ -24,8 +24,6 @@ const UpdateEducationModal = ({ element, onClose, isVisible }) => {
       dispatch(deleteEducation({id : element.id}));
     }
 
-    if (!isVisible) return null;
-
     return (
         <div className="Titlemodal fixed inset-0 bg-black backdrop-blur-sm flex justify-center items-center bg-opacity-60">
           <div className="w-[700px]">

@@ -15,6 +15,7 @@ export const LinkSlice = createSlice({
         updateLink : (state, action) => {
             state.value.map((Link) => {
                 if (Link.id === action.payload.id) {
+                    Link.type = action.payload.type;
                     Link.content = action.payload.content;
                 }
             })

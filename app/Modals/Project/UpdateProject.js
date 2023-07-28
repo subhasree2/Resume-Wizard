@@ -35,7 +35,7 @@ const UpdateProjectModal = ({ element, onClose, isVisible }) => {
                 <input className="p-1 m-2" type="text" name="title" value={title} onChange={(e) => settitle(e.target.value)}/>
               </div>
     
-              <div className="descriptionitution mt-3">
+              <div className="description mt-3">
                 <div className="m-0 text-left">Project description : </div>
                 <input className="p-1 m-2" name="description" value={description} onChange={(e) => setdescription(e.target.value)}/>
               </div>

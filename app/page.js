@@ -7,11 +7,15 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import EducationReducer from './store/Education';
 import ProjectReducer from './store/Project';
+import linkReducer from './store/Links';
+import skillReducer from './store/Skills';
 
 const store = configureStore({
   reducer : {
     education : EducationReducer,
-    project : ProjectReducer
+    project : ProjectReducer,
+    link : linkReducer,
+    skill : skillReducer
   }
 });
 
