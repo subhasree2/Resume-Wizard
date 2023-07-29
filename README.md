@@ -31,6 +31,12 @@ Website Link : https://resume-wiz.vercel.app/
 
 4. Access the application in your browser at `http://localhost:3000`. You can now begin creating your resume with the interactive UI.
 
+
+
+https://github.com/subhasree2/Resume-Wizard/assets/75073682/91fba299-8993-407c-93e2-0a3e3f82a86a
+
+
+
 ### Contributing
 Contributions to this project are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
